@@ -1,7 +1,7 @@
 import createWidget from '../src/createWidget';
 
 describe('createWidget', () => {
-  it('does the thing', () => {
+  it('works with Jest "mock" functions', () => {
     const returnValue = 'returnValue';
     const stubWidget = { name: 'stubWidget' };
     const mockRepo = {

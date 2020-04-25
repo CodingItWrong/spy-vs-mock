@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import createWidget from '../src/createWidget';
 
 describe('createWidget', () => {
-  it('does the thing', () => {
+  it('works with Sinon mocks', () => {
     const returnValue = 'returnValue';
     const stubWidget = { name: 'stubWidget' };
     const repo = {
@@ -14,6 +14,6 @@ describe('createWidget', () => {
 
     const response = createWidget(stubWidget, repo);
 
-    expect(response).to.equal(returnValue);
+    expect(response).toEqual(returnValue);
   });
 });
