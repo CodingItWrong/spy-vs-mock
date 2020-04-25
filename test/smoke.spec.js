@@ -15,6 +15,5 @@ describe('createWidget', () => {
     const response = createWidget(stubWidget, repo);
 
     expect(response).to.equal(returnValue);
-    mock.verify();
   });
 });
